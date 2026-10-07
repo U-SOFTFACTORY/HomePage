@@ -422,3 +422,6 @@ PrecompiledWeb/
 # 発行物は bin\Release に置いて管理対象にする（上の除外ルールより優先させるため最後に記述）
 !/bin/[Rr]elease/
 !/bin/[Rr]elease/**
+
+# 発行プロファイル（発行の除外設定を含む）は管理対象にする
+!/app_data/publishprofiles/*.pubxml

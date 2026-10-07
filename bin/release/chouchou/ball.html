@@ -1,0 +1,71 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>2014</title>
+<style type="text/css">
+body {
+	margin:0;
+	padding:0;
+	background-color: #333;
+}
+#ball {
+	display: block;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	border: solid 8px #000;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+#ball.gold {
+	background-color: #DAA520;
+}
+#ball.silver {
+	background-color: #C0C0C0;
+}
+</style>
+</head>
+<body>
+<span id="ball"></span>
+<script type="text/javascript">
+(function(){
+	var ball = document.getElementById("ball")
+	,bh = ball.offsetHeight
+	,bw = ball.offsetWidth
+	,left = ( window.innerWidth / 2 ) - ( bw / 2 )
+	,top = -ball.offsetHeight
+	,ground = ( window.innerHeight / 2 ) - ( bh / 2 );
+	ball.style.left = left + "px";
+	ball.style.top = top + "px";
+
+	var r = Math.floor( Math.random() * 1000 + 1 );
+	if ( r < 1 ) {
+		ball.className = "gold";
+	} else if ( r < 11 ) {
+		ball.className = "silver";
+	}
+
+	setTimeout(function(){
+		var y = top
+		,b = ground
+		,v = 0
+		,R = 0.48;
+		function gravity() {
+			y+= ++v;
+			if( y >= b ) {
+			  	y = b;
+			  	v*= -R;
+			  	if ( !~~v ) {
+			  		clearInterval(g)
+			  	}
+			}
+			document.getElementById("ball").style.top = y + "px";
+		}
+		var g = setInterval(gravity, 10);
+	}, 1000);
+}());
+</script>
+</body>
+</html>
