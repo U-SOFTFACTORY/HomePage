@@ -37,7 +37,8 @@ obj/x86/
 
 
 # Build results on 'Bin' directories
-**/[Bb]in/*
+# Web Site プロジェクトでは bin に参照DLLを置くため管理対象にする
+#**/[Bb]in/*
 # Uncomment if you have tasks that rely on *.refresh files to move binaries
 # (https://github.com/github/gitignore/pull/3736)
 #!**/[Bb]in/*.refresh
