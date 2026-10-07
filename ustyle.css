@@ -1,0 +1,570 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td{
+padding:0;
+margin:0;
+}
+
+table{
+border-collapse: collapse;
+border-spacing:0;
+}
+img{
+border:0;
+line-height:0;
+}
+ol,ul{
+list-style:none;
+}
+
+body{
+font:12px/1.5 "メイリオ","Meiryo",arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+color:#333;
+}
+
+a:link,a:visited
+{
+    color:#438918;text-decoration:none;
+}
+    
+    
+#top #topicsArea li, a:hover 
+{
+    color: rgb(255, 0, 0);
+    /*color:#367f93;*/
+}
+
+
+a:active, a:focus 
+{
+    outline:0;
+}
+
+img
+{
+    border:0;
+}
+
+
+/*******************************
+レイアウト
+*******************************/
+#header, #mainNav, #wrapper,#footer ul{
+margin:0 auto;
+width:880px;
+clear:both;
+}
+
+#sidebar{
+float:left;
+width:233px;
+padding:22px 0 50px;
+}
+
+#main{
+float:right;
+width:627px;
+padding:22px 0 50px;
+}
+
+#fb-root{
+display:none;
+width:233px;
+background:none;
+border:1px solid #dcdcdc;
+}
+
+
+/*******************************
+/* ヘッダー
+*******************************/
+#headerWrap{
+height:147px;
+background:#fff url(img/wall.jpg) repeat-x 0 0;
+}
+
+#header{
+position:relative;
+height:147px;
+}
+
+#header h1,#header h2,#header p{
+position:absolute;
+top:31px;
+font-size:10px;
+font-weight:normal;
+line-height:22px;
+}
+
+/* スローガン */
+#header h1{
+top:2px;
+left:0;
+color:#555;
+}
+
+/* ロゴ */
+#header h2{
+left:0;
+}
+
+/* 住所 */
+#header p{
+right:0;
+}
+
+
+/************************************
+/* メインナビゲーション
+************************************/
+ul#mainNav{
+position:absolute;
+top:102px;
+height:45px;
+background:url(img/mainNavBg.png) no-repeat 0 0;
+}
+
+ul#mainNav li{
+text-indent: -5000px;
+float:left;
+}
+
+ul#mainNav a{
+display: block;
+width: 176px;
+height: 45px;
+background:url(img/mainNav1.jpg) no-repeat 0 0;
+}
+
+ul#mainNav li.current_page_item a,
+ul#mainNav li.current-menu-item a,
+ul#mainNav li a:hover{background-position:0 -45px;}
+
+ul#mainNav li.menu-item-2 a{background-image:url(img/mainNav2.jpg);}
+ul#mainNav li.menu-item-3 a{background-image:url(img/mainNav3.jpg);}
+ul#mainNav li.menu-item-4 a{background-image:url(img/mainNav4.jpg);}
+ul#mainNav li.menu-item-5 a{background-image:url(img/mainNav5.jpg);}	
+
+
+
+/*******************************
+/* メイン
+*******************************/
+.mainImg{margin-bottom:20px;}
+
+h3.heading{
+clear:both;
+padding-left:30px;
+line-height:34px;
+font-size:16px;
+font-weight:normal;
+color:#438918;
+background:url(img/headingBg.png) no-repeat 0 0;
+}
+
+.article{
+border:0;
+margin:0 0 20px 0;
+/*padding: 0 10px 0 10px;*/
+padding: 2px 2px 2px 2px;
+background:none;
+border:1px solid #dcdcdc;
+}
+
+.article_cell{
+clear:both;
+/*padding:20px 0 25px;*/
+padding:2px 2px 2px;
+border-bottom:1px dashed #dcdcdc;
+}
+
+.main{
+padding:20px 10px 20px 10px;
+margin:0 0 20px 0;
+border:0;
+background:none;
+border:1px solid #dcdcdc;
+}
+
+.last{border-bottom:none;}
+
+.main h4{
+margin:0 0 10px 10px;
+font-size:16px;
+font-weight:normal;
+color:#438918;
+}
+
+.article h4{
+margin:0 0 10px 280px;
+font-size:16px;
+font-weight:normal;
+color:#438918;
+}
+
+.article h5
+{
+font-size: 1.0em;
+font-weight:normal;
+margin:0 0 10px 280px;
+}
+
+
+.alignleft{
+float:left;
+/*padding:0 15px 15px 10px;*/
+padding:5px 5px 5px 5px;
+}
+
+.alignright{
+float:right;
+padding: 0 10px 15px 15px;
+}
+
+.aligncenter{
+padding: 20px 0 20px 0;
+text-align: center;
+}
+
+.main p{
+padding:0 10px 0 10px;
+    height: 100px;
+    width: 584px;
+}
+
+.article p{
+padding:0 10px 0 10px;
+}
+
+
+
+.picture{
+width:193px;
+float:left;
+text-align:center;
+background-color:#ffffff;
+border-top:1px solid #eaeaea;
+border-right:1px solid #ddd;
+border-bottom:1px solid #ccc;
+border-left:1px solid #eaeaea;
+padding:5px 0 5px 0;
+margin:5px 0 0 5px;
+}
+
+.picture:hover{
+background-color:#fffaef;
+}
+
+
+/*******************************
+/* サイトバー
+*******************************/
+#sidebar h3{
+clear:both;
+padding-left:30px;
+line-height:34px;
+font-size:16px;
+font-weight:normal;
+color:#438918;
+background:url(img/side_headingBg.png) no-repeat 0 0;
+}
+
+ul.info{
+overflow:hidden;
+padding:0 0 10px 17px;
+border:1px solid #dcdcdc;
+margin-bottom:20px;
+}
+
+ul.info li{
+line-height:0;
+padding:10px 0;
+margin-right:15px;
+border-bottom:1px dashed #dcdcdc;
+}
+
+ul.info a:link,ul.info a:visited{
+display: block;
+padding-left:12px;
+line-height:normal;
+text-decoration:none;
+color:#313131;
+background:url(img/linkArrow.gif) no-repeat 0 50%;
+}
+
+ul.info a:hover, ul.info li.current_page_item a, ul.info li.current-menu-item a
+{
+    color:#438918;    
+}
+
+ul.info li.last{border-bottom:none;}
+
+ul.info2{
+overflow:hidden;
+padding:0 0 0px 17px;
+}
+
+ul.info2 li{
+line-height:0;
+padding:10px 0;
+margin-right:15px;
+}
+
+ul.info2 a:link,ul.info2 a:visited{
+display: block;
+padding-left:12px;
+line-height:normal;
+text-decoration:none;
+color:#313131;
+background:url(img/linkArrow.gif) no-repeat 0 50%;
+}
+
+ul.info2 a:hover, ul.info li.current_page_item a, ul.info li.current-menu-item a
+{
+    color:#438918;    
+}
+
+ul.info2 li.last{border-bottom:none;}
+
+
+#sidebar p{margin-bottom:20px;}
+
+/*******************************
+/* フッター
+*******************************/
+#footer{
+clear:both;
+background:#a2ae52;
+}
+
+#footer ul{
+padding:25px 0;
+text-align:center;
+}
+
+#footer li{
+display: inline;
+padding: 5px 16px;
+border-left:1px dotted #e2f0d9;
+}
+
+#footer li a{
+text-decoration:none;
+color:#fff;
+}
+
+#footer li a:hover
+{
+    color:#e2f0d9;
+    
+ }
+
+p#copy{
+padding:10px 0 37px;
+text-align:center;
+color:#fff;
+font-size:10px;
+}
+
+/*******************************
+/* cssメニュ
+*******************************/
+.menuBox h3 
+{
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     font-size: 1.6em;
+     margin: 5px;
+     padding-top: 2px;
+}
+
+.menuBox h3 span 
+{
+     font-size:0.8em;
+     display:block;
+     border-top: 1px solid rgb(153, 153, 153);
+     color: rgb(153, 153, 153);
+     margin-top: 1px;
+     text-align: right;
+     padding-top: 1px; 
+     font-style: italic; 
+}
+
+.menuBox h3 a 
+{
+     text-decoration: none; 
+     color: rgb(255, 255, 255); 
+     display: block; 
+}
+     
+.menuBox h3 a:hover, #top .menuBox h3 a:hover span 
+{
+     color: rgb(255, 0, 0); 
+}
+     
+.menuBox 
+{
+     height: 150px; 
+     width: 274px; 
+     background-image: url('img/topboxbg.jpg'); 
+     background-repeat: no-repeat; 
+     padding: 8px; 
+     float: left; 
+     margin: 0px;
+      }
+     
+/*boxgrid:背景をおくタグ*/
+.boxgrid 
+{
+    width: 274px; 
+    height: 144px; 
+    float: left; 
+    overflow: hidden; 
+    position: relative;
+}
+    
+.boxgrid img 
+{
+    border: 0px solid rgb(255, 255, 255); 
+}
+    
+.boxgrid p 
+{
+    color: rgb(255, 255, 255); 
+    font-size: 1.2em; 
+    line-height: 150%; 
+    padding: 0px 5px; }
+    
+.boxgrid p.btn 
+{
+    text-align: right; 
+    padding: 5px 0px 0px;
+}
+
+
+/* ロールオーバ
+.boxgrid:hover img
+{
+  position: relative;
+  top: -50px;
+}*/
+    
+.boxcaption 
+{
+    position: absolute; 
+    background: none repeat scroll 0% 0% rgb(0, 0, 0); 
+    width: 274px; 
+    opacity: 0.8; 
+    margin-right: auto; 
+    margin-left: auto; 
+    top: 75px; 
+    left: 0px; 
+ }
+    
+
+/* CSS Lightbox */
+
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display:none;
+	z-index: 9999;
+	background: rgba(0,0,0,0.3);
+}
+
+.overlay a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.overlay img {
+	border: 5px solid #ddd;
+}
+
+.overlay:target {
+	display: table;
+}
+
+.overlay .right {
+	display:block;
+	text-align: center;
+	line-height: 2em;
+}
+
+/*#AJX ACCORDION*/
+.hlink
+{
+    background-color:#ccc;
+    border:1px solid #ddd;
+    color:#444;
+    padding:10px;
+    cursor:pointer;
+ }
+ .clink
+ {
+     padding:5px;
+     border-bottom:1px solid #ddd;
+     background-color:#f1f1f1;
+     color:#333;
+ }
+ 
+ 
+ 
+ /* スライドショー */
+
+#slides {
+	
+	z-index:1;   
+}
+
+.slides_container {
+	width: 627px;
+	height: 328px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+.slides_container a {
+	width: 627px;
+	height: 328px;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+}
+
+.pagination {
+	
+	
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*-------------------------------------*/
+

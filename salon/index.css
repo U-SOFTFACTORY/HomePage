@@ -1,0 +1,179 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0px; padding: 0px; border: 0px none; outline: 0px none; font-size: 100%; vertical-align: baseline; background: none repeat scroll 0% 0% transparent; }
+body { line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+a { margin: 0px; padding: 0px; font-size: 100%; vertical-align: baseline; background: none repeat scroll 0% 0% transparent; }
+input, select { vertical-align: middle; }
+img, object, embed { max-width: 100%; }
+*::-moz-selection { background: none repeat scroll 0% 0% rgb(221, 221, 221); }
+img::-moz-selection { background: none repeat scroll 0% 0% transparent; }
+@media only screen and (max-device-width: 480px) {
+	html {  }
+	a {  }
+}
+html { overflow-y: scroll; }
+body { font-size: 75%; line-height: 1.6; background-color: transparent; min-height: 100%; }
+img { vertical-align: bottom; border: medium none; }
+a { cursor: pointer; }
+a:focus { outline: medium none; }
+.left { float: left; }
+.right { float: right; }
+.clearfix, dl { display: inline-block; }
+.clearfix:after, dl:after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix, dl { display: block; }
+:first-child + html .clearfix { height: 1%; }
+:first-child + html dl { height: 1%; }
+
+body { margin: 0px; padding: 15px; color: rgb(34, 34, 34); line-height: 1.7em; font-family: Helvetica,'ヒラギノ角ゴ Pro W3','HiraKakuProN-W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; text-align: center; }
+body { font-family: 'PT Sans Caption',Helvetica,'ヒラギノ角ゴ Pro W3','HiraKakuProN-W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; }
+a { color: rgb(38, 38, 38); text-decoration: none; }
+a:hover { color: rgb(234, 31, 0); }
+a:active { color: rgb(249, 96, 60); }
+.a-bb a, a.a-bb { color: rgb(234, 31, 0); border-bottom: 1px dotted rgb(170, 170, 170); }
+.a-bb a:hover, a.a-bb:hover { color: rgb(170, 170, 170); border-bottom: 1px dotted rgb(234, 31, 0); text-decoration: none; }
+a.red:hover {  }
+a img.img, a.btn, a.a-bn { border-bottom: medium none ! important; }
+input { vertical-align: bottom; }
+label { cursor: pointer; }
+ul { margin-left: 1.5em; }
+ul.ln { list-style: none outside none; margin: 0px; padding: 0px; }
+.red { color: rgb(234, 31, 0); }
+img.icon { padding-right: 3px; vertical-align: middle; }
+.btn { border: medium none; background: none repeat scroll 0% 0% rgb(234, 31, 0); color: rgb(255, 255, 255); font-weight: bold; line-height: 1em; }
+a.btn, input.btn { cursor: pointer;
+    top: 0px;
+    left: 0px;
+}
+a.btn:hover, input.btn:hover { color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(170, 170, 170); }
+.a-btn { padding: 6px 10px; }
+.radius-5 { border-radius: 5px; position: relative; }
+.radius-8 { border-radius: 8px; position: relative; }
+.symbol { padding-right: 5px; font-weight: normal; }
+a:hover .symbol { color: rgb(170, 170, 170); }
+.title { padding-bottom: 20px; }
+.title h1 { font-size: 2.5em; line-height: 1.5em; }
+.date { color: rgb(102, 102, 102); }
+#post-body {  }
+.wrapper { width: 920px; margin: 0px auto; text-align: left; }
+.contents { margin-top: 20px; border-top: 1px solid rgb(117, 117, 117); padding: 30px 0px 50px; }
+.main { width: 917px; 
+float: left; }
+.side { width: 245px; float: right; }
+header { padding-bottom: 80px; line-height: 1.3em; }
+header ul { list-style: none outside none; padding: 0px; margin: 0px; }
+header ul li { padding-bottom: 8px; }
+header ul li.header-li { padding-bottom: 0px;
+    height: 19px;
+}
+header .tb { overflow: visible; display: table; height: 100px; }
+header .cell { display: table-cell; vertical-align: middle; }
+:first-child + html header .tb { padding: 7px 0px; height: 46px; }
+header h1 { float: left; width: 137px; }
+header h1 img { font-size: 1px; line-height: 1; }
+header .header-cap { float: left; width: 322px; border-left: 1px solid rgb(117, 117, 117); border-right: 1px solid rgb(117, 117, 117); }
+header .header-cap h2 { padding: 0px 20px; font-weight: normal; }
+header .header-icon { float: left; width: 70px; }
+header .header-icon img { width: 40px; height: 40px; }
+header .header-icon div { padding-left: 20px; }
+header .header-logged { float: left; width: 357px; 
+font-weight: bold; }
+header .header-link { float: left; width: 100px; text-align: right; font-weight: bold; }
+header .header-lang { float: right; width: 68px; border-left: 1px solid rgb(117, 117, 117); }
+header .header-lang li { text-align: right; }
+footer { clear: both; position: relative; margin: 50px auto 0px; border-top: 1px solid rgb(117, 117, 117); height: 50px; }
+footer ul { position: absolute; right: 0px; top: 15px; list-style: none outside none; }
+footer ul li { display: inline; padding: 0px 0px 0px 30px; }
+.form dl { margin-bottom: 30px; }
+.form dt { margin-bottom: 8px; }
+.form .label strong { font-size: 1.1em; }
+.form .label span { padding-left: 10px; }
+.form .label em { font-style: normal; font-weight: normal; color: rgb(117, 117, 117); padding-left: 10px; }
+.form .label em span { padding-left: 0px; }
+.form img.icon { padding-right: 10px; }
+.form input.date { color: rgb(34, 34, 34); }
+.input-text { padding: 10px 5px; border: 1px solid rgb(117, 117, 117); font-size: 1.5em; width: 908px; }
+.input-textarea { padding: 10px 5px; border: 1px solid rgb(117, 117, 117); font-size: 1.5em; width: 908px; word-break: break-all; }
+.input-btn { font-size: 1.5em; padding: 10px 20px; letter-spacing: 1px; background: none repeat scroll 0% 0% rgb(234, 31, 0); }
+.form-date ul { list-style: none outside none; margin: 0px; }
+.form-date ul li { float: left; padding-right: 10px; }
+.form-date ul li.sep { padding-top: 10px; }
+.form-date .datepicker { width: 150px; vertical-align: middle; }
+.form-date .timepicker { width: 100px; vertical-align: middle; }
+.form-number .input-text { width: 100px; }
+.events-option { padding: 0px 0px 10px; border-bottom: 1px dotted rgb(170, 170, 170); margin-bottom: 10px; }
+.events-option.last { border-bottom: medium none; }
+.events-option p { margin-bottom: 1em; }
+.events-option .form-main { margin-bottom: 15px; }
+.events-option .note { margin-bottom: 0px; }
+.events-option .note p { margin-bottom: 0px; }
+.events-option .form-main dl { margin: 10px 0px 0px; }
+.events-option .form-main dt { width: 200px; float: left; font-weight: bold; }
+.events-option .form-main dd { width: 500px; float: left; }
+#form-twitter dl { margin: 0px; width: 350px; }
+#form-twitter dt { width: 350px; }
+#form-twitter .input-text { width: 300px; vertical-align: middle; }
+#form-twitter .form-twitter-account { float: left; }
+#form-twitter .form-twitter-account div { margin-top: 10px; }
+#form-twitter .form-twitter-account p { margin-bottom: 10px; }
+#form-twitter .form-twitter-account ul { list-style: none outside none; margin: 5px 0px; padding: 0px; }
+#form-twitter .form-twitter-account ul li { display: inline; padding-right: 5px; }
+#form-twitter .form-twitter-hash { float: left; }
+#form-twitter .form-twitter-hash dd span { font-size: 1.4em; vertical-align: middle; }
+.form-nav { width: 150px; float: left; }
+.form-nav {  }
+.form-main { width: 750px; float: right; }
+.form-main .input-text { width: 738px; }
+.form-btn { position: relative; margin-top: 30px; padding-top: 30px; border-top: 1px dotted rgb(117, 117, 117); text-align: center; }
+.error-t { display: block; padding-top: 5px; font-size: 11px ! important; color: rgb(255, 0, 0); }
+#events-new { border-top: 0px none; padding-top: 0px; }
+#events .form section .section-title { border-top: 1px dotted rgb(117, 117, 117); border-bottom: 1px dotted rgb(117, 117, 117); font-size: 1.5em; padding: 15px 0px; margin-bottom: 30px; }
+#events .form-2col dl.left, #events .form-2col dl.right { width: 450px; }
+#events .form-2col .input-text { width: 440px; }
+#events .form .event-description textarea { width: 901px; }
+#events .form .event-description .side { border: 1px dotted rgb(117, 117, 117); }
+#events .form .event-description .side strong { display: block; padding: 10px 10px 0px; }
+#events .form .event-description .side p { padding: 10px; }
+.redcloth_output_corner { clear: both; }
+.redcloth_output { padding: 10px 0px; margin: 0px; color: rgb(51, 51, 51); border-top: 1px dotted rgb(234, 31, 0); border-bottom: 1px dotted rgb(234, 31, 0); width: 650px; }
+#linkRecruitGroup { color: rgb(67, 91, 103); font-size: 10px; font-weight: bold; text-decoration: underline; font-family: 'メイリオ','ヒラギノ角ゴ Pro W3',Meiryo,'ＭＳ Ｐゴシック',MS PGothic,sans-serif; line-height: 2; }
+/* ::::: http://atnd.org/stylesheets/jquery.ui.datepicker.css ::::: */
+
+.ui-datepicker { width: 17em; padding: 0.2em 0.2em 0px; display: none; }
+.ui-datepicker { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.ui-datepicker {  }
+/* ::::: http://atnd.org/stylesheets/jquery.timepicker-1.1.0.css ::::: */
+
+.ui-timepicker { display: block; position: absolute; height: 200px; text-align: center; overflow-y: auto; overflow-x: hidden; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.ui-timepicker-hidden { display: none; }
+/* ::::: http://atnd.org/stylesheets/thickbox.css ::::: */
+
+/* ::::: http://fonts.googleapis.com/css?family=PT+Sans+Caption ::::: */
+
+@font-face {
+	font-family: "PT Sans Caption";
+	font-style: normal;
+	font-weight: 400;
+	src: local("PT Sans Caption"), local("PTSans-Caption"), url('oxytdozbcxu8mtnbvbhesqrw432dtwgner78eoj0i0s.woff') format("woff");
+}
+/* ::::: http://atnd.org/javascripts/form/exvalidation.css ::::: */
+
+.formError { padding-bottom: 13px; display: block; }
+.fixed { padding-bottom: 0px; }
+.formError .formErrorClose { border: 2px solid rgb(37, 37, 37); border-radius: 9px; display: block; width: 16px; height: 16px; position: absolute; top: -4px; right: -4px; color: rgb(239, 239, 239); background: none repeat scroll 0% 0% rgb(51, 51, 51); font-weight: bold; text-align: center; cursor: pointer; box-shadow: 1px -1px 3px rgb(136, 136, 136); }
+.formError .formErrorClose:hover { background: none repeat scroll 0% 0% rgb(102, 102, 102); }
+.fixed .formErrorClose { display: none; }
+.formError .formErrorContent { padding: 6px 0px; color: rgb(255, 0, 0); font-size: 11px; }
+.fixed .formErrorContent { margin-top: 0.5em; border-radius: 0px; box-shadow: none; }
+.formError .formErrorArrow { width: 15px; height: 15px; position: absolute; bottom: 0px; left: 20px; z-index: 5001; }
+.fixed .formErrorArrow { display: none; }
+.formError .formErrorArrow div { margin: 0px auto; display: block; height: 1px; background: none repeat scroll 0% 0% rgb(37, 37, 37); line-height: 0px; font-size: 0px; box-shadow: 0px 2px 3px rgb(136, 136, 136); }
+.formError .formErrorArrow .line10 { width: 19px; }
+.formError .formErrorArrow .line9 { width: 17px; }
+.formError .formErrorArrow .line8 { width: 15px; }
+.formError .formErrorArrow .line7 { width: 13px; }
+.formError .formErrorArrow .line6 { width: 11px; }
+.formError .formErrorArrow .line5 { width: 9px; }
+.formError .formErrorArrow .line4 { width: 7px; }
+.formError .formErrorArrow .line3 { width: 5px; }
+.formError .formErrorArrow .line2 { width: 3px; }
+.formError .formErrorArrow .line1 { width: 1px; }

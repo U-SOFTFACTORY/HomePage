@@ -1,0 +1,363 @@
+@charset "Shift_JIS";
+/*■mailform.css■*/
+/*▼▼▼全サイト共通▼▼▼*/
+/*▼共通（サイト内）▼*/
+html,body,div,p,span,form{
+	margin:0;
+	padding:0;
+}
+/*
+*/
+body{
+	background-color:#ffffff;
+	font:14px 'ＭＳ ゴシック',Osaka,sans-serif;
+	color:dimgray;	/*文字色*/
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-align:center;	/*ボックス要素を含めたセンタリング←削除不可*/
+}
+.alignleft{
+	text-align:left;
+}
+a{color:blue; text-decoration:underline;}		/*aタグの記述順は変えない事*/
+a:visited{color:mediumvioletred; text-decoration:underline;}
+a:hover{color:green; background-color:white; text-decoration:none;}
+
+p{
+	margin:14px 0px 0px 0px;
+	/*line-height:1.5em;*/
+	font-size:14px;
+	color:dimgray;
+}
+strong{color:dimgray; font-weight:normal;}	           /*強調文字色*/
+em{color:dimgray; font-weight:normal; font-style:normal;}  /*強調文字色*/
+b{color:dimgray; font-weight:normal;}                      /*強調文字色*/
+table{
+}
+th{
+	font-size:12px;
+	font-weight:normal;
+	background-color:#ffddbb;
+	padding:3px 0px 0px 0px;
+}
+td{
+	font-size:12px;
+	font-weight:normal;
+	background-color:#ffddff;
+	padding:3px 0px 0px 0px;
+	text-align:center;
+}
+
+ul{
+	list-style:none;
+}
+li{
+	margin:2px 0px 0px 0px;
+}
+
+
+.prlink{
+	width:180px;
+	height:18px;
+	overflow:auto;
+	border:solid 1px #aaaaaa;
+	background-color:#ffffff;
+}
+
+.prlink ul , .prlink li{
+	width:150px;
+	font-size:10px;
+	list-style-type:none;
+	line-height:120%;
+	display:block;
+}
+.disp{
+	display:none;
+}
+hr{
+	text-align:left;
+	width:70%
+}
+
+
+/*▼ヘッダ▼*/
+#header{
+	text-align:right;
+	font-size:10px;
+	color:white;
+	width:800px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+#header h1{font-size:10px;
+	color:white;
+/*	background-color:#ff9933;*/
+	font-weight:normal;
+	float:left;
+	text-align:left;
+
+#header h2{font-size:10px;
+	color:white;
+/*	background-color:#ff9933;*/
+	font-weight:normal;
+	float:left;
+	text-align:left;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;}
+
+#sitename{
+	font-weight:bold;
+	text-align:left;
+	clear:both;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;}
+#sitename a{font-size:28px; color:#ffff99; text-decoration:none;}
+#sitename a:visited{color:#ffff99; text-decoration:none;}
+#sitename a:hover{color:#ffff99; background-color:#ff9933; text-decoration:none;}
+
+#contents{
+	float:left;
+	width:800px;
+	text-align:left;
+	margin:0px 0px 0px 0px;
+}
+#contents h1{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;
+
+	padding:2px 0px 4px 4px;
+}
+#contents h2{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;	
+	padding:2px 0px 4px 4px;
+}
+#contents h3{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;
+	padding:2px 0px 4px 4px;
+}
+#contents p{
+}
+
+
+#copy{
+	clear:both;
+	font-size:10px;
+	margin:6px 6px 6px 6px;
+	padding:0px 0px 0px 0px;
+	text-align:left;
+}
+.pagetop{
+	font-size:10px;
+	margin:6px 6px 6px 6px;
+	padding:0px 0px 0px 0px;
+	text-align:right;
+}
+/*▲▲▲全サイト共通▲▲▲*/
+/*▼▼▼mailformオリジナル▼▼▼*/
+/*
+	float:left;
+*/
+img.qr{
+	width:74px;
+	height:74px;
+}
+img.thumb{
+	clear:both;
+}
+.ad{
+	width:370px;
+	height:12px;
+	clear:both;
+	margin:0px 6px 6px 0px;	/*topは確保できず*/
+	padding:0px 0px 0px 0px;
+	list-style:none;
+	text-align:left;
+}
+.ad li{
+	float:left;
+	font-size:10px;
+	color:#ffff99;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+a.ad{color:dimgray; text-decoration:none;}		/*aタグの記述順は変えない事*/
+a.ad:visited{color:dimgray; text-decoration:none;}
+a.ad:hover{color:dimgray; background-color:white; text-decoration:none;}
+hr{
+	clear:both;
+	text-align:center;
+	width:70%
+}
+/*
+	border-left:1px solid gray;
+	border-bottom:1px solid gray;
+*/
+#contents div.title1{
+	float:left;
+	width:34px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title2{
+	float:left;
+	width:120px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title3{
+	float:left;
+	width:70px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title4{
+	float:left;
+	width:60px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title5{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title6{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title7{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title8{
+	float:left;
+	width:92px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.title9{
+	float:left;
+	width:32px;
+	margin-left:2px;
+	text-align:center;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item1{
+	float:left;
+	width:34px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item2{
+	float:left;
+	width:120px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item3{
+	float:left;
+	width:70px;
+	margin-left:2px;
+	text-align:left;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item4{
+	float:left;
+	width:60px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item5{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item6{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item7{
+	float:left;
+	width:40px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item8{
+	float:left;
+	width:92px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+#contents div.item9{
+	float:left;
+	width:32px;
+	margin-left:2px;
+	text-align:right;
+	font-size:12px;
+	background-color:lemonchiffon;
+}
+/*▲▲▲mailformオリジナル▲▲▲*/
+
+
+
+    div.centeringTest p {  
+        display: table-cell;  
+        vertical-align: middle;  
+        margin: 0;  
+    }  
+       
+    /*for IE6 */  
+    * html .centeringTest p {  
+        display: inline;  
+        zoom: 1;  
+    }  
+       
+    /*for IE7 */  
+    *:first-child+html .centeringTest p {  
+        display: inline;  
+        zoom: 1;  
+    }  
+

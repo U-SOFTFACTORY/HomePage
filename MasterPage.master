@@ -1,0 +1,165 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+
+<title>U-SOFTFACTORY | 会社情報:デジタルサイネージ・コンテンツ制作のことならU-SOFTFACTORY</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="robots" content="index,follow"/>
+<!--<meta name="copyright" content="U-SoftFactory.net" /> -->
+<meta name="keywords" content="デジタルサイネージ,インタラクティブコンテンツ,Kinect,キネクト,バーチャルファッション,バーチャルフィッティング,バーチャルミラー,仮想試着,アプリ開発,MotionControl,モーションコントロール,ジェスチャーコントロール,コンテンツ制作,ソフトウェア開発,大阪,AR,拡張現実,3D,UNITY,広告,集客" /> 
+<meta name="description" content="U-SOFTFACTORYはデジタルサイネージの企画・開発・販売、インタラクティブコンテンツ、KINECTアプリ、バーチャルミラー、オリジナルソフトウェア、業務システム開発、ホームページ、WEBシステムの企画・開発・導入・運用まで一貫して行う企業です。
+企業・個人を問わずソフトウェアを通じて、健全で安心できる豊かな社会の実現に貢献します" />
+
+<link rel="index" href="/index.aspx" />
+<link rel="shortcut icon" href="/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="ustyle.css" media="all" />
+
+<script type="text/javascript" src="scripts/rov.js"></script>
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/slideBox.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAe2Tai_KfP7qkACgBrg1WfBR4HeH_qgYM8wVOpTIAz1JjSUh7yBR-tSelF3BgUIQUNxSMnSQVfFLJnw"></script>
+
+<script type='text/javascript' src='share/js/jquery.js'></script>
+<script type="text/javascript" src="share/js/jquery.min.js"></script>
+<script type="text/javascript" src="share/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="share/js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="share/js/default.js"></script>
+
+<script type="text/javascript" >
+    $(function () {
+        $('#slides').slides({
+            preload: true,
+            preloadImage: 'index/img/loading.gif',
+            play: 7000,
+            pause: 100,
+            hoverPause: true
+        });
+    });
+</script>
+
+</head>
+ 
+<body onload="rollovers( '_df' , '_ov' );">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<!-- ヘッダー -->
+<div id="headerWrap">
+	<div id="header">
+		<h1>デジタルサイネージ・インタラクティブコンテンツ・WEB連携・KINECT・AR開発のことならU-SOFTFACTORY</h1>
+		<h2><a href="index.aspx"><img src="img/logo.jpg" alt="U-SOFTFACTORY" title="" width="346" height="60" /></a></h2>
+		<p id="address"><%--<img src="img/address.jpg" alt="Tel:090-6677-0250 〒547-0021 大阪市平野区喜連東1-1-10" title="" width="305" height="60" />--%></p>
+		<!-- メインナビゲーション -->
+		<ul id="mainNav">
+			<li class="menu-item-1"><a href="index.aspx">トップページ</a></li>
+			<li class="menu-item-2"><a href="digitalsignage.aspx">デジタルサイネージ</a></li>
+			<li class="menu-item-3"><a href="originalsystem.aspx">サービス概要</a></li>
+			<li class="menu-item-4"><a href="company.aspx">会社情報</a></li>
+			<li class="menu-item-5"><a href="inquiry.aspx">お問い合わせ</a></li>
+		</ul>
+		<!-- / メインナビゲーション -->
+	</div> 
+</div>
+<!-- / ヘッダー -->
+
+
+<!-- メイン左 + メイン右 -->
+<div id="wrapper">
+
+	<!-- メイン 右 -->
+	<div id="main">
+	    <div id="content">
+            <asp:contentplaceholder id="ContentPlaceHolderContent" runat="server">
+            </asp:contentplaceholder>    
+        </div>
+    </div>
+	<!-- / メイン 右 -->
+
+	<!-- サイドバー -->
+	<div id="sidebar">
+	  
+      <p><a href="http://secure.windowshosting.jp/aff.php?aff=118&gid=1" ><img src="img/side_banner1_df.jpg" alt="" title="" width="233" height="120" /></a></p>
+            
+     <div class="fb-like-box" href="http://www.facebook.com/USoftfactory" width="233" height="230" show-faces="true" stream="false" header="true"></div>
+     
+ 
+     
+        <h3>サービス一覧</h3>
+		<ul class="info">
+			<li><a href="index.aspx">トップページ</a></li>
+            <li><a href="">サイネージソリューション</a>
+                <ul class="info2">
+                <li><a href="repo4600.aspx">46インチ 輝度700(屋内用)</a></li>
+                <li><a href="repo4000.aspx">40インチ 輝度700(屋内用)</a></li>
+                <li><a href="tp40b.aspx">40インチ 輝度350(屋内用)</a></li>
+                <li><a href="digitalsignage.aspx">対応可能コンテンツ</a></li>
+                <li class="last"><a href="productsi.aspx">コンテンツ制作実績</a></li>
+                </ul>
+            </li>
+			<li><a href="originalsystem.aspx">システム開発受託サービス</a></li>
+			<%--<li><a href="template.aspx">ＷＥＢテンプレート販売</a></li>--%>
+			<li><a href="rentsvr.aspx">レンタルサーバー取次</a></li>			
+			<li><a href="privacy.aspx">プライバシーポリシー</a></li>						
+			<li><a href="inquiry.aspx">お問い合わせ</a></li>
+			<li class="last"><a href="login.aspx">ログイン</a></li>			
+		</ul>
+		<h3>導入実績</h3>
+		<ul class="info">
+			<li><a href="productsi.aspx">コンテンツ制作実績</a></li>			
+			<li><a href="productsh.aspx">ホームページ製作実績</a></li>		
+            <li><a href="http://www.ekouhou.net/%E4%BA%8C%E6%AC%A1%E5%85%83%E3%83%90%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%88%EF%BC%B1%EF%BC%B2%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%89%E8%AA%AD%E3%81%BF%E5%8F%96%E3%82%8A%E3%81%AB%E3%82%88%E3%82%8B%E9%A0%86%E7%95%AA%E7%AE%A1%E7%90%86%E5%8F%8A%E3%81%B3%E6%90%BA%E5%B8%AF%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E5%91%BC%E5%87%BA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/disp-A,2012-252476.html">特許出願</a></li>		
+			<li class="last"><a href="http://www.vector.co.jp/vpack/browse/person/an042602.html">フリーソフトのご紹介</a></li>			
+		</ul>
+				
+        <h3>相互リンク</h3>
+		<ul class="info">
+            <li><a href="http://www.b-mall.ne.jp/CompanyDetail-LYbqCQexDSjq.aspx">ビジネスモール</a></li>		
+			<li><a href="http://www.business-directory.jp/u-softfactory/service1/">ビジネスディレクトリ</a></li>			
+			<li><a href="http://www.hotfrog.jp/%E4%BC%81%E6%A5%AD/U-SOFTFACTORY#Overview">Hotfrog</a></li>
+            <li><a href="http://www.sansokan.jp/iag/link.html">大阪産業創造館</a></li>				
+            <li><a href="http://www.mebic.com/cluster/u-softfactory.html">メビック扇町</a></li>		
+            <li><a href="http://profile.ameba.jp/u-softfactory/">Amebaブログ</a></li>		
+            <li><a href="https://twitter.com/USoftfactory">Twitter</a></li>		
+            <li class="last"><a href="https://www.facebook.com/USoftfactory">FaceBook</a></li>		
+		</ul>
+
+        <p><a href="http://secure.windowshosting.jp/aff.php?aff=118&gid=2" ><img src="img/side_banner2_df.jpg" alt="" title="" width="233" height="350" /></a>&nbsp;</p>
+		<p>&nbsp;</p>
+	  
+	</div>
+	<!-- / サイドバー -->
+
+</div>
+<!--  / メイン左 + メイン右 -->
+
+
+<!-- フッター -->
+<div id="footer">
+	<ul>
+		<li><a href="index.aspx">トップページ</a></li>
+		<li><a href="digitalsignage.aspx">デジタルサイネージ</a></li>
+		<li><a href="subpage.aspx">サービス概要</a></li>
+		<li><a href="company.aspx">会社情報</a></li>
+		<li><a href="inquiry.aspx">お問い合わせ</a></li>
+	</ul>
+	<p id="copy">&copy; Copyright U-SOFTFACTORY All Rights Reseved.</p>
+</div> 
+<!-- / フッター -->
+
+</body>
+</html>
