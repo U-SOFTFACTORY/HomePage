@@ -37,8 +37,7 @@ obj/x86/
 
 
 # Build results on 'Bin' directories
-# Web Site プロジェクトでは bin に参照DLLを置くため管理対象にする
-#**/[Bb]in/*
+**/[Bb]in/*
 # Uncomment if you have tasks that rely on *.refresh files to move binaries
 # (https://github.com/github/gitignore/pull/3736)
 #!**/[Bb]in/*.refresh
@@ -419,3 +418,7 @@ FodyWeavers.xsd
 
 # Web Site precompile output
 PrecompiledWeb/
+
+# 発行物は bin\Release に置いて管理対象にする（上の除外ルールより優先させるため最後に記述）
+!/bin/[Rr]elease/
+!/bin/[Rr]elease/**
